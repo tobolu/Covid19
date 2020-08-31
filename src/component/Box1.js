@@ -45,20 +45,19 @@ export default class Box1 extends Component {
             <View style={{
                 flexDirection: 'row',
                 justifyContent:'space-between',
-                justifyContent: 'space-around',
               }}>
 
-                <View style={{textAlign: 'center', width: 100, height: 75, borderRadius: 15, backgroundColor: '#f3c623',}}>
-                <Text style={{}}>Positive</Text>
-                <Text>{this.state.globalPositive}</Text>
+                <View style={{width: 100, paddingTop: 15, paddingBottom: 15, borderRadius: 15, backgroundColor: '#f3c623',}}>
+                <Text style={{textAlign: 'center', }}>Positive</Text>
+                <Text style={{textAlign: 'center', }}>{this.state.globalPositive}</Text>
                 </View>
-                <View style={{width: 100, height: 75, borderRadius: 15, backgroundColor: '#01d28e'}}>
-                <Text>Sembuh</Text>
-                <Text>{this.state.globalSembuh}</Text>
+                <View style={{width: 100, paddingTop: 15, paddingBottom: 15, borderRadius: 15, backgroundColor: '#01d28e'}}>
+                <Text style={{textAlign: 'center', }}>Sembuh</Text>
+                <Text style={{textAlign: 'center', }}>{this.state.globalSembuh}</Text>
                     </View>
-                <View style={{width: 100, height: 75, borderRadius: 15, backgroundColor: '#ff7171'}}>
-                <Text>Meninggal</Text>
-                <Text>{this.state.globalMati}</Text>
+                <View style={{width: 100, paddingTop: 15, paddingBottom: 15, borderRadius: 15, backgroundColor: '#ff7171'}}>
+                <Text style={{textAlign: 'center', }}>Meninggal</Text>
+                <Text style={{textAlign: 'center', }}>{this.state.globalMati}</Text>
                     </View>
               </View>
         );
