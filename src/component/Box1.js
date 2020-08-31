@@ -44,11 +44,12 @@ export default class Box1 extends Component {
         return(
             <View style={{
                 flexDirection: 'row',
+                justifyContent:'space-between',
                 justifyContent: 'space-around',
               }}>
 
-                <View style={{width: 100, height: 75, borderRadius: 15, backgroundColor: '#f3c623',}}>
-                <Text>Positive</Text>
+                <View style={{textAlign: 'center', width: 100, height: 75, borderRadius: 15, backgroundColor: '#f3c623',}}>
+                <Text style={{}}>Positive</Text>
                 <Text>{this.state.globalPositive}</Text>
                 </View>
                 <View style={{width: 100, height: 75, borderRadius: 15, backgroundColor: '#01d28e'}}>
