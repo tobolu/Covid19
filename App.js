@@ -3,7 +3,6 @@ import {View, Text} from 'react-native';
 import Head from './src/component/Head.js';
 import Subheader from './src/component/Subheader.js';
 import Flexbox from './src/component/Box1.js';
-import Global from './src/component/Global.js';
 import Box from './src/component/Box.js';
 
 

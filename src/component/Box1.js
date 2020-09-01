@@ -12,7 +12,7 @@ export default class Box1 extends Component {
             globalPositive : 0,
             globalSembuh    : 0,
             globalMati  : 0,
-            indonesia : 0
+            
         }
     }
 

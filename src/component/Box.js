@@ -10,10 +10,8 @@ export default class Box1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            globalPositive : 0,
-            globalSembuh    : 0,
-            globalMati  : 0,
             indonesia : 0
+            
         }
     }
 
@@ -31,7 +29,6 @@ export default class Box1 extends Component {
             this.setState({
                 indonesia: res.data
             })
-            // alert(this.state.indonesia.fid);
         })
         .catch((error) => {
             alert('error');
@@ -62,9 +59,9 @@ export default class Box1 extends Component {
                                 <Text>{datas.provinsi}</Text>
                                 </View>
                                 <View style={{alignItems: 'flex-start', alignSelf:'center', flexDirection: 'row', padding:10}}>
-                                    <Text style={{textAlign: 'center', width: 60, paddingTop: 5, paddingBottom: 5, marginLeft: 3, borderRadius: 15, backgroundColor: '#f3c623',}}>{datas.kasusPosi}</Text>
-                                    <Text style={{textAlign: 'center', width: 60, paddingTop: 5, paddingBottom: 5, marginLeft: 3, borderRadius: 15, backgroundColor: '#01d28e',}}>{datas.kasusSemb}</Text>
-                                    <Text style={{textAlign: 'center', width: 60, paddingTop: 5, paddingBottom: 5, marginLeft: 3, borderRadius: 15, backgroundColor: '#ff7171',}}>{datas.kasusMeni}</Text>
+                                    <Text style={{textAlign: 'center', width: 50, paddingTop: 5, paddingBottom: 5, marginLeft: 3, borderRadius: 15, backgroundColor: '#f3c623',}}>{datas.kasusPosi}</Text>
+                                    <Text style={{textAlign: 'center', width: 50, paddingTop: 5, paddingBottom: 5, marginLeft: 3, borderRadius: 15, backgroundColor: '#01d28e',}}>{datas.kasusSemb}</Text>
+                                    <Text style={{textAlign: 'center', width: 50, paddingTop: 5, paddingBottom: 5, marginLeft: 3, borderRadius: 15, backgroundColor: '#ff7171',}}>{datas.kasusMeni}</Text>
                                     
                                 </View>
                             </View>
